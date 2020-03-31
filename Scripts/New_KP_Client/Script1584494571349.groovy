@@ -38,11 +38,11 @@ WebUI.click(findTestObject('Page_KenyaEMR/button_Register new Patient'))
 
 WebUI.click(findTestObject('Buttons/surName'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Buttons/surName'), 'Celestine')
+WebUI.setText(findTestObject('Buttons/surName'), 'Joselyne')
 
 WebUI.click(findTestObject('Buttons/firstName'))
 
-WebUI.setText(findTestObject('Buttons/firstName'), 'Maina')
+WebUI.setText(findTestObject('Buttons/firstName'), 'Nyambane')
 
 WebUI.click(findTestObject('Buttons/gender/femal'))
 
@@ -158,7 +158,7 @@ WebUI.click(findTestObject('Registration/KP_Forms/kp_provider_button'))
 
 WebUI.click(findTestObject('Registration/KP_Forms/search_patient_all'))
 
-WebUI.setText(findTestObject('Page_KenyaEMR/input_ID or name (3 chars min)_query'), 'celestine')
+WebUI.setText(findTestObject('Page_KenyaEMR/input_ID or name (3 chars min)_query'), 'joselyne')
 
 WebUI.click(findTestObject('Registration/KP_Forms/patient-search-click'))
 
@@ -166,34 +166,31 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Registration/KP_Forms/kp_enroll_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_KenyaEMR/input_Key Population Type_w8'))
+WebUI.click(findTestObject('Registration/KP_Forms/kp_enrollment_type'))
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Unique Identifier code_w9'), 'qwertyuiop1234567890asdfghjkl161')
+WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Unique Identifier code_w9'), 'qwertyuiop1234567890asdfghjkl185')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Alias_w13'), 'Lucky')
+WebUI.setText(findTestObject('Registration/KP_Forms/alias-name'), ' mary')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Name _w15'), 'Migori')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_alt_contact_person'), 'Mary Toto')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Telephone number _w17'), '0745178093')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_alt_contact_number'), '0723458912')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Name _w15'), 'Mary Toto')
+WebUI.click(findTestObject('Registration/KP_Forms/peer_edu_contact'))
 
-WebUI.click(findTestObject('Object Repository/Page_KenyaEMR/input_Have you been contacted by a peer edu_f68881'))
+WebUI.setText(findTestObject('Registration/KP_Forms/hot_spot'), 'Migori')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Hot spot mostly frequented_w23'), 'Migori')
+WebUI.selectOptionByValue(findTestObject('Registration/KP_Forms/hotspot_type'), '165017', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_KenyaEMR/select_Street                              _12d63d'), 
-    '165017', true)
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_contactform_01'), '2000')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Which year did you start sex work_w29'), '2000')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_contactform_02'), '2000')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Which Year Did You Start Using Drugs _134fd6'), '2000')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_contactform_03'), '2')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_On average how many sex acts do you h_55a3ba'), '2')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_contactform_04'), '2')
 
-WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_On average how many anal sex acts do _6db2a0'), '2')
-
-WebUI.click(findTestObject('Object Repository/Page_KenyaEMR/input_On average how many times do you inje_da1a6c'))
+WebUI.click(findTestObject('Registration/KP_Forms/kp_contactform_submit'))
 
 WebUI.delay(2)
 
@@ -624,7 +621,7 @@ WebUI.click(findTestObject('Object Repository/Page_KenyaEMR/input_Key Population
 
 WebUI.click(findTestObject('Registration/KP_Forms/kp_referal_date'))
 
-WebUI.setText(findTestObject('Registration/KP_Forms/kp_referal_date'), '25-Mar-2020')
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_referal_date'), '31-Mar-2020')
 
 WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/input_Referral date can not be before encou_092545'), 'Migori HC')
 
@@ -641,4 +638,60 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_KenyaEMR/select
 WebUI.setText(findTestObject('Object Repository/Page_KenyaEMR/textarea_Other specify_w22'), 'Good')
 
 WebUI.click(findTestObject('Object Repository/Page_KenyaEMR/input_On average how many times do you inje_da1a6c'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_dignosis_button'))
+
+WebUI.selectOptionByValue(findTestObject('Registration/KP_Forms/kp_diagnosis_01'), '125201', true)
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_diagnosis_02'), 'Doing bad')
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_diagnosis_03'), 'num')
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_diagnosis_04'))
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_diagnosis_05'), 'given drugs')
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_diagnosis_06'), 'will be treated')
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_diagnosis-submit_button'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_button'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_date'))
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_followup_date'), '31-Mar-2020')
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_01'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_02'))
+
+WebUI.setText(findTestObject('Registration/KP_Forms/kp_followup_02'), '31-Mar-2020')
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_03'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_04'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_05'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_06'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_07'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_followup_submit_button'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_add_rlnship_button'))
+
+WebUI.click(findTestObject('Page_KenyaEMR/body_var OPENMRS_CONTEXT_PATH  openmrsKenya_7ad206'))
+
+WebUI.setText(findTestObject('Page_KenyaEMR/input_Login_select2-input select2-focused'), 'mar')
+
+WebUI.selectOptionByValue(findTestObject('Page_KenyaEMR/select_Doctor        Patient        Sibling_13a14b'), '12:A', true)
+
+WebUI.click(findTestObject('Page_KenyaEMR/input_Start date_fr5303_date'))
+
+WebUI.click(findTestObject('Page_KenyaEMR/a_26'))
+
+WebUI.click(findTestObject('Page_KenyaEMR/button_Save'))
+
+WebUI.click(findTestObject('Registration/KP_Forms/kp_checkout-button'))
 
