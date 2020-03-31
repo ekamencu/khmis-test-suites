@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;w8_0&quot;]</value>
+         <value>//fieldset/table/tbody/tr/td[2]/span/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;w8_0&quot;]</value>
+      <value>//fieldset/table/tbody/tr/td[2]/span/input</value>
    </webElementProperties>
 </WebElementEntity>
